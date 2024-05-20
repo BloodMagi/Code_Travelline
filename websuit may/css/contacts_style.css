@@ -1,0 +1,130 @@
+/*Основное меню*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B497D6;
+    color: #000000;
+}
+
+header {
+    background-color: #E1E2EF;
+    color: #02020A;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+}
+
+/*Верхнее меню*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  .wrapper {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  
+  .wrapper ul {
+    width:90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  
+  .wrapper ul li {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .wrapper ul li a {
+    color: #000000;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .wrapper ul li a:hover {
+    color: #B497D6;
+  }
+  
+  .wrapper ul li .tooltip {
+    position: absolute;
+    top: -60px;
+    left: -75px;
+    background: #fff;
+    width: 170px;
+    padding: 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #B497D6;
+    font-weight: bold;
+    display: none;
+  }
+  
+  .wrapper ul li a:hover .tooltip{
+     display: block;
+  }
+  
+  .wrapper ul li .tooltip:before{
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }

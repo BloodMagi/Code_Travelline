@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/css/sghopping_cart.css">
+<title>Корзина</title>
+<!--Верхнее меню-->
+<body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <div class="wrapper">
+      <ul>
+          <li>
+            <a href="/index.html"><i class="fas fa-home fa-lg"></i>
+              <div class="tooltip">
+                  Главная
+              </div>
+            </a>
+          </li>
+  
+          <li><a href="/html/catalog.html"><i class="fas fa-stream fa-lg"></i>
+            <div class="tooltip">
+              Каталог
+            </div>
+            </a>
+        </li>
+  
+          <li><a href="/html/about.html"><i class="far fa-address-card fa-lg"></i>
+            <div class="tooltip">
+              О нас
+            </div>
+            </a>
+        </li>
+  
+          <li><a href="/html/contacts.html"><i class="fas fa-chart-bar fa-lg"></i>
+             <div class="tooltip">
+              Контакты
+            </div>
+            </a>
+        </li>
+  
+          <li><a href="/html/shopping cart.html"><i class="fas fa-shopping-basket fa-lg"></i>
+            <div class="tooltip">
+              Корзина
+            </div>
+            </a>
+        </li>
+        <li><a href="/html/dostavka.html"><i class="fas fa-boxes fa-lg"></i>
+          <div class="tooltip">
+              Доставка
+          </div>
+          </a>
+      </li>
+  
+      <li><a href="/html/login.html"><i class="fas fa-user-tie fa-lg"></i>
+          <div class="tooltip">
+              Авторизация
+          </div>
+          </a>
+        </div>
+        </a>
+    </li>
+      </ul>
+  </div>
+  </body>
+<!--main menu-->
+<body>
+<div class="container">
+  <div class="payment_details">
+    <h1>Платежная информация</h1>
+    <div class="details_card">
+      <div class="name_address">
+        <div class="first_lastName">
+          <input type="text" placeholder="Имя" />
+          <input type="text" placeholder="Фамилия" />
+        </div>
+        <div class="address">
+          <input type="text" onkeyup="change()" id="put" placeholder="Адрес" />
+          <input type="number" placeholder="Подъезд" />
+          <input type="text" placeholder="Город" />
+        </div>
+      </div>
+      <h1>Shipping Details</h1>
+      <div class="shipping_card">
+        <div class="new_card">
+          <h4>Новый адрес</h4>
+          <p id="output">Россия, Йошкар-Ола, Площадь имени В.И. Ленина, 1</p>
+          <p>424000</p>
+        </div>
+        <div class="add_savedcard">
+          <h4>Сохраненный адрес</h4>
+          <p>Россия, Йошкар-Ола, Медведево, улица Логинова, 8</p>
+          <p>425200</p>
+        </div>
+      </div>
+      <div class="proced_payment">
+        <a href="">Переходите к оплате</a>
+      </div>
+    </div>
+  </div>
+  <div class="order_summary">
+    <h1>Краткое описание заказа</h1>
+    <div class="summary_card">
+      <div class="card_item">
+        <div class="product_img">
+          <img src=https://i.postimg.cc/3RNtZjYd/3d1c9892b434f5d74a0e9ebd30c8addd-1.webp" alt="" />
+        </div>
+        <div class="product_info">
+          <h1>Michael Kors Bradshaw</h1>
+          <p>Сумка Michael Kors Bradshaw 30T1G2BL0B WHITE Small</p>
+          <div class="close-btn">
+            <i class="fa fa-close"></i>
+          </div>
+          <div class="product_rate_info">
+            <h1>16 538 ₽</h1>
+            <span class="pqt-minus">-</span>
+            <span class="pqt">1</span>
+            <span class="pqt-plus">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="card_item">
+        <div class="product_img">
+          <img src="https://i.postimg.cc/W4WBj14q/01-00047993-1-1.webp" alt="" />
+        </div>
+        <div class="product_info">
+          <h1>ELEGANZZA</h1>
+          <p>ELEGANZZA Женская сумка кросс-боди</p>
+          <div class="close-btn">
+            <i class="fa fa-close"></i>
+          </div>
+          <div class="product_rate_info">
+            <h1>29 900 ₽
+
+            </h1>
+            <span class="pqt-minus">-</span>
+            <span class="pqt">1</span>
+            <span class="pqt-plus">+</span>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="order_price">
+        <p>Краткое описание заказа</p>
+        <h4>Сумка х2</h4>
+      </div>
+      <div class="order_total">
+        <p>Общая сумма</p>
+        <h4>46 438 ₽</h4>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

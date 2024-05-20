@@ -1,0 +1,124 @@
+/*Основное меню*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B497D6;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #fff;
+    padding: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #012c57;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
+/*Верхнее меню*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+  .wrapper {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 450px;
+    height: 80px;
+    border-radius: 50px;
+  }
+  
+  .wrapper ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  
+  .wrapper ul li a {
+    color: #000000;
+    font-size: 24px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper ul li a:hover {
+    color: #B497D6;
+  }
+  .wrapper ul li .tooltip:before{
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }

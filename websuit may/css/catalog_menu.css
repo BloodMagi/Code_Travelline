@@ -1,0 +1,173 @@
+/*Основное меню*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B497D6;
+    color: #000000;
+}
+
+header {
+    background-color: #E1E2EF;
+    color: #02020A;
+    padding: 15px;
+    margin: 30;
+    text-align: center;
+}
+
+    
+/*Верхнее меню*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  .wrapper {
+    position: absolute;
+    top: 15%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 450px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  
+  
+  .wrapper ul {
+    width:90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  
+  .wrapper ul li {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .wrapper ul li a {
+    color: #000000;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper ul li a:hover {
+    color: #B497D6;
+  }
+  
+  .wrapper ul li .tooltip {
+    position: absolute;
+    top: -60px;
+    left: -75px;
+    background: #fff;
+    width: 170px;
+    padding: 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #B497D6;
+    font-weight: bold;
+    display: none;
+  }
+  
+  .wrapper ul li a:hover .tooltip{
+     display: block;
+  }
+  
+  .wrapper ul li .tooltip:before{
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+
+  /*Menu left*/
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f6fb;
+  }
+  
+  /* Основные свойства для бокового меню */
+  .menu {
+    display: flex;
+    flex-direction: column; /* размещаем элементы к колонку */
+    width: 250px;
+    min-height: 100vh; /* на всю высоту экрана */
+    position: fixed; /* чтобы меню было фиксированным */
+    top: 50; /* прижимаем к верхнему */
+    left: 0; /* .. и нижнему краю */
+    background-color: #B497D6;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2); /* задаем тень, чтобы отделить от фона */
+  }
+  
+  /* Свойства для контента */
+  .content {
+    padding-left: 280px; /* отступ от бокового меню 240px + 40px */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  
+
+  /* Позиционирование элементов в меню */
+  .menu__link,
+  .admin__link {
+    padding-left: 20px;
+  }
+  
+  /* Свойства для элементов меню */
+  .link {
+    position: relative; /* чтобы задать потом псевдоэлемент */
+    display: flex; /* чтобы элемент тянулся на всю ширину */
+    align-items: center; /* по центру текст и иконка */
+    height: 50px; /* высота элемента 45px */
+    text-decoration: none;
+  }
+  /* Свойства текста внутри ссылки */
+  .link > span {
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    color: #02020A;
+  }
+  
+  /* При наведении на ссылку - полупрозрачный белый фон */
+  .link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Выводим оранжевую линию слева */
+  .link:hover:before {
+    display: flex;
+  }
+  
+  /* Создаем оранжевую линию слева */
+  .link:before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #ffa000;
+  }
+  

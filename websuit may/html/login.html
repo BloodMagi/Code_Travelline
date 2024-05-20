@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/css/login_style.css">
+    <!--Верхнее меню-->
+    <body>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <div class="wrapper">
+            <ul>
+                <li>
+                  <a href="/index.html"><i class="fas fa-home fa-lg"></i>
+                    <div class="tooltip">
+                        Главная
+                    </div>
+                  </a>
+                </li>
+                </ul>
+                  </div>
+                 </body>
+    <style>
+        .btn:hover {
+            background-color: #0080ff;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2 class="animate__animated animate__fadeInUp">Вход в аккаунт</h2>
+            <form id="loginForm" onsubmit="return login()">
+                <div class="form-group">
+                    <label for="username">Логин:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn animate__animated animate__fadeInUp">Войти</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function login() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "Polina_Hoz" && password === "Polina_Hoz") {
+
+                window.location.href = "profile.html";
+                return false; 
+            } else {
+                alert("Неверный логин или пароль!");
+                return false; 
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
